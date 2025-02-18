@@ -1,0 +1,163 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 20px;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 380px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  padding: 24px;  /* increased from 16px */
+  transform: translateY(0);
+  transition: transform 0.2s;
+}
+
+.login-container:hover {
+  transform: translateY(-5px);
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 20px;  /* increased from 12px */
+}
+
+.login-header h2 {
+  font-size: 18px;  /* increased from 16px */
+  color: #2c3e50;
+  margin-bottom: 2px;  /* added some space */
+}
+
+.app-name {
+  display: block;
+  color: #3498db;
+  font-size: 22px;  /* increased from 20px */
+  font-weight: 700;
+}
+
+.auth-subtitle {
+  color: #7f8c8d;
+  font-size: 12px;  /* increased from 11px */
+  margin-top: 8px;  /* increased from 4px */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;  /* increased from 8px */
+  margin-top: 16px;  /* added space after header */
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 0;
+}
+
+input {
+  width: 100%;
+  padding: 8px 16px;  /* increased from 6px 12px */
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;  /* increased from 13px */
+  transition: all 0.2s;
+  background: #f8f9fa;
+  height: 38px;  /* increased from 32px */
+}
+
+input:focus {
+  border-color: #3498db;
+  background: white;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.password-group {
+  position: relative;
+  margin-bottom: 8px;  /* added space after password fields */
+}
+
+.password-toggle {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 14px;
+  color: #95a5a6;
+}
+
+button[type="submit"] {
+  background: #3498db;
+  color: white;
+  padding: 0;  /* reset padding */
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  height: 42px;  /* increased from 40px */
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 4px rgba(52, 152, 219, 0.2);
+  display: flex;  /* added */
+  align-items: center;  /* added */
+  justify-content: center;  /* added */
+  line-height: 1;  /* added */
+  margin-top: 8px;  /* added space before button */
+}
+
+button[type="submit"]:hover {
+  background: #2980b9;
+  box-shadow: 0 4px 8px rgba(52, 152, 219, 0.3);
+  transform: translateY(-1px);
+}
+
+button[type="submit"]:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 2px rgba(52, 152, 219, 0.2);
+}
+
+button[type="submit"].loading {
+  background: #bdc3c7;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+  opacity: 0.8;  /* added */
+}
+
+.error-message {
+  background: #fff1f0;
+  border: 1px solid #ffa39e;
+  padding: 6px;
+  border-radius: 8px;
+  color: #cf1322;
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+
+.auth-switch {
+  text-align: center;
+  margin-top: 20px;  /* increased from 12px */
+  color: #7f8c8d;
+  font-size: 13px;  /* increased from 12px */
+}
+
+.auth-switch a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.auth-switch a:hover {
+  text-decoration: underline;
+}
